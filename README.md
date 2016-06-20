@@ -5,6 +5,8 @@ express基本使用,包括注册,登陆,上传,下载,登录权限控制,session
 
 主框架: express 4.16
 
+模板引擎 : ejs 2.3
+
 实时刷新: socket.io 1.4
 
 数据库: mongodb
