@@ -1,0 +1,18 @@
+<%include header%>
+	<h2>下载</h2>
+  <hr/>
+  <%for(var i=0; i< 10; i++){%>
+	  <div class="col-sm-10 col-sm-offset-2">
+	    <a href="/after/down?d=<%=i%>" class="btn btn-primary"><%=i%>.jpg</a>
+	  </div>
+	  <div class="col-sm-10 col-sm-offset-2" style="height: 10px;"></div>
+	<%}%>
+<script type="text/javascript">
+  $(".layout-shouye").removeClass("active");
+  $(".layout-mailer").removeClass("active");
+  $(".layout-info").removeClass("active");
+  $(".layout-cheerio").removeClass("active");
+  $(".layout-download").addClass("active");
+	$(".cheerioForm").bootstrapValidator();
+</script>
+<%include footer%>

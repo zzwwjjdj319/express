@@ -1,0 +1,31 @@
+<%include header%>
+<form id="mailerForm" method="post" class="form-horizontal">
+  <h2>nodemailer模块-发送邮件</h2>
+  <hr/>
+  <div class="form-group">
+    <label for="username" class="control-label col-sm-2">个人邮箱</label>
+    <div class="col-sm-8">
+      <input type="text" name="mailer" placeholder="输入邮箱" data-bv-notempty data-bv-notempty-message="不能为空" pattern="^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$" data-bv-regexp-message="请输入正确的邮箱格式" class="form-control"/>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="password" class="control-label col-sm-2">发送内容</label>
+    <div class="col-sm-8">
+      <input type="text" name="connect" placeholder="输入内容" data-bv-notempty data-bv-notempty-message="不能为空" class="form-control"/>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-10 col-sm-offset-2">
+      <button type="submit" class="btn btn-primary">发送邮件</button>
+    </div>
+  </div>
+</form>
+<script type="text/javascript">
+  $(".layout-shouye").removeClass("active");
+  $(".layout-cheerio").removeClass("active");
+  $(".layout-info").removeClass("active");
+  $(".layout-download").removeClass("active");
+  $(".layout-mailer").addClass("active");
+	$("#mailerForm").bootstrapValidator();
+</script>
+<%include footer%>

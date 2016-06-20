@@ -1,0 +1,41 @@
+<%include header%>
+<form id="regForm" method="post" class="form-horizontal">
+  <h2>用户注册</h2>
+  <hr/>
+  <div class="form-group">
+    <label for="username" class="control-label col-sm-2">用户名</label>
+    <div class="col-sm-8">
+      <input id="username" type="text" placeholder="输入注册用户名" name="username" class="form-control" data-bv-notempty data-bv-notempty-message="不能为空" pattern="^[a-zA-z][a-zA-Z0-9_]{2,9}$" data-bv-regexp-message="用户名必须已英文字母开头,支持3-10位"/>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="password" class="control-label col-sm-2">密码</label>
+    <div class="col-sm-8">
+      <input id="password" type="password" placeholder="用户密码" name="password" class="form-control" data-bv-notempty data-bv-notempty-message="不能为空" pattern="^[a-zA-Z0-9]{2,9}$" data-bv-regexp-message="密码必须3-10位"/>
+    </div>
+  </div>
+  <!-- <div class="form-group">
+    <label for="password2" class="control-label col-sm-2">重复密码</label>
+    <div class="col-sm-8">
+      <input id="password2" type="password" placeholder="重复密码" name="password2" class="form-control" data-bv-notempty data-bv-notempty-message="不能为空" pattern="^[a-zA-Z0-9]{2,9}$" data-bv-regexp-message="密码必须3-10位"/>
+    </div>
+  </div> -->
+  <div class="form-group">
+    <label for="name" class="control-label col-sm-2">姓名</label>
+    <div class="col-sm-8">
+      <input id="name" type="text" placeholder="真实姓名" name="name" class="form-control" data-bv-notempty data-bv-notempty-message="不能为空" pattern="^[\u4e00-\u9fa5]{2,5}$" data-bv-regexp-message="请输入正确的姓名"/>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-10 col-sm-offset-2">
+      <button type="submit" class="btn btn-primary">注册</button>
+    </div>
+  </div>
+</form>
+<script type="text/javascript">
+	$(".layout-shouye").removeClass("active");
+  $(".layout-login").removeClass("active");
+  $(".layout-reg").addClass("active");
+  $("#regForm").bootstrapValidator();
+</script>
+<%include footer%>

@@ -1,0 +1,11 @@
+<%-data%>
+<%if(!truewww){var truewww = '';}%>
+<%if(truewww == 1){%>
+<script type="text/javascript">
+	$("#form1").attr('action','http://www.baidu.com/s');
+</script>
+<%}else{%>
+<script type="text/javascript">
+	$("#form1").attr('action','/after/s');
+</script>
+<%}%>

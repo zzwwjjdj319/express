@@ -1,0 +1,39 @@
+<%include header%>
+<form method="post" class="form-horizontal cheerioForm">
+	<h2>cheerio模块-网络爬虫</h2>
+  <hr/>
+<div class="form-group">
+  <div class="col-sm-10 col-sm-offset-2">
+    <input type="hidden" name="truewww" value="0"/>
+    <button type="submit" class="btn btn-primary">假百度</button>
+  </div>
+</div>
+</form>
+
+<form method="post" class="form-horizontal cheerioForm">
+  <hr/>
+<div class="form-group">
+  <div class="col-sm-10 col-sm-offset-2">
+    <input type="hidden" name="truewww" value="1"/>
+    <button type="submit" class="btn btn-primary">真百度</button>
+  </div>
+</div>
+</form>
+
+<form action="/after/cheerioIP" method="post" class="form-horizontal cheerioForm">
+  <hr/>
+<div class="form-group">
+  <div class="col-sm-10 col-sm-offset-2">
+    <button type="submit" class="btn btn-primary">爬虫IP</button>
+  </div>
+</div>
+</form>
+<script type="text/javascript">
+  $(".layout-shouye").removeClass("active");
+  $(".layout-mailer").removeClass("active");
+  $(".layout-info").removeClass("active");
+  $(".layout-download").removeClass("active");
+  $(".layout-cheerio").addClass("active");
+	$(".cheerioForm").bootstrapValidator();
+</script>
+<%include footer%>
