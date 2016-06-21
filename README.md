@@ -1,7 +1,7 @@
 # nodejs-express-socket.io-mongodb
 express基本使用,包括注册,登陆,上传,下载,登录权限控制,session持久化,邮件发送,网络爬虫,实时刷新等
 
-线上演示地址 : http://117.40.138.188:15978/before/index
+线上演示地址 : http://120.25.169.8/before/index
 
 主框架: express 4.16
 
